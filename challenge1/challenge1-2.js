@@ -1,7 +1,7 @@
 const nome = "Silvana";
-const sexo = "M";
-const idade = 55;
-const contribuicao = 35;
+const sexo = "F";
+const idade = 85;
+const contribuicao = 29;
 const regra = idade + contribuicao
 let nota = ""
 
@@ -10,10 +10,10 @@ if (sexo == "M") {
         if (regra >= 95) {
             nota = `${nome}, você pode se aposentar!`
         } else {
-            nota = `Sinto muito ${nome}, você ainda não pode se aposentar, pois não se enquadra na regra! Ainda faltam ${(95-regra)/2} anos.`
+            nota = `Sinto muito ${nome}, você ainda não pode se aposentar, pois não se enquadra na regra! Ainda faltam ${(95-regra)/2} ano(s).`
         }
     } else {
-        nota = `Sinto muito ${nome}, você não pode se aposentar!`
+        nota = `Sinto muito ${nome}, você não pode se aposentar! Você precisa contribuir ainda por ${35-contribuicao} ano(s).`
     }
 }
 if (sexo == "F") {
@@ -21,10 +21,10 @@ if (sexo == "F") {
         if (regra >= 85) {
             nota = `${nome}, você pode se aposentar!`
         } else {
-            nota = `Sinto muito ${nome}, você ainda não pode se aposentar, pois não se enquadra na regra! Ainda faltam ${(95-regra)/2} anos.`
+            nota = `Sinto muito ${nome}, você ainda não pode se aposentar, pois não se enquadra na regra! Ainda faltam ${(85-regra)/2} ano(s).`
         }
     } else {
-        nota = `Sinto muito ${nome}, você não pode se aposentar!`
+        nota = `Sinto muito ${nome}, você não pode se aposentar! Você precisa contribuir ainda por ${30-contribuicao} ano(s).`
     }
 
 }
