@@ -45,7 +45,7 @@ Crie um programa que armazena dados da empresa Rocketseat dentro de um objeto ch
   - Rua: Rua Guilherme Gembala
   - Número: 260
 
--[ ] Imprima em tela utilizando `console.log` o nome da empresa e seu endereço no seguinte formato:
+- [x] Imprima em tela utilizando `console.log` o nome da empresa e seu endereço no seguinte formato:
 
 ```
 A empresa Rocketseat está localizada em Rua Guilherme Gembala, 260
@@ -64,7 +64,7 @@ As tecnologias também devem ser objetos contendo `nome` e `especialidade`, exem
 { nome: 'JavaScript', especialidade: 'Web/Mobile' }
 ```
 
--[ ] Imprima em tela o nome e especialidade da primeira tecnologia que o usuário utiliza no seguinte formato:
+- [x] Imprima em tela o nome e especialidade da primeira tecnologia que o usuário utiliza no seguinte formato:
 
 ```
 O usuário Carlos tem 32 anos e usa a tecnologia C++ com especialidade em Desktop
