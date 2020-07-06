@@ -30,20 +30,18 @@ function total(valores) {
     for(let valor of valores){
         tot = tot + valor
     }
-    //console.log(tot);
     return tot
 }
-
-//total(usuarios[2].receitas)
-//total(usuarios[2].despesas)
-
-
 
 for (let usuario of usuarios){
         const saldo = calculaSaldo(usuario.receitas, usuario.despesas)
                     
-        if(saldo < 0 ){
-            console.log(`${usuario.nome} possui saldo NEGATIVO de R$ ${saldo.toFixed(2)}.`);
+        if(saldo <= 0 ){
+            if(saldo == 0){
+                console.log(`${usuario.nome} possui saldo NULO.`);    
+            }else{
+                console.log(`${usuario.nome} possui saldo NEGATIVO de - R$ ${Math.abs(saldo.toFixed(2))}.`);
+            }
         } else{
             console.log(`${usuario.nome} possui saldo POSITIVO de R$ ${saldo.toFixed(2)}.`);
         }
